@@ -1,6 +1,9 @@
-function notebook()
-let notebook = prompt("Selecione producto")
-switch(notebook){
+
+    let notebook2 =  ["hp", "lenovo", "apple", "bgh", "dell"];
+notebook();
+function notebook(){
+ prompt("Selecciona una marca de notebook")
+ switch(notebook){
    case"hp": 
     break;
 
@@ -17,6 +20,8 @@ switch(notebook){
     break;
 
     default:
-        alert("no has seleccionado un producto")
+        alert("No has seleccionado una marca válida. Las marcas disponibles son: hp, lenovo, apple, bgh, dell")
         break;
 }
+}
+
