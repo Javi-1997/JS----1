@@ -36,16 +36,16 @@ class Producto {
     confirmarCarrito() {
       while (true) {
         let seleccion = prompt(
-          "agregar items: (Componentes)"
+          "agregar items: "
         );
   
         let producto = this.buscarProducto(seleccion);
   
         if (producto) {
-          let cantidad = parseInt(prompt("Ingrese la cantidad que desea seleccionar:"));
+          let cantidad = parseInt(prompt("Ingrese cantidad :"));
           this.agregarItem(producto, cantidad);
         } else {
-          alert("El item seleccionado no existe. Por favor, vuelva a intentarlo.");
+          alert("Sin stock. Por favor, vuelva a intentarlo.");
         }
   
         if (!confirm("¿Desea agregar otro producto al carrito?")) {
@@ -66,7 +66,7 @@ class Producto {
   
     vaciarCarrito() {
       this.items = [];
-      console.log("El carrito ha sido vaciado.");
+      console.log("Carrito vacio.");
     }
   }
   
